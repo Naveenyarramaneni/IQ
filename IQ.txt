@@ -1,0 +1,18 @@
+Jenkins installations:
+https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-20-04
+1.	apt update
+2.	java -version
+3.	sudo apt install default-jre
+4.	sudo apt install default-jdk
+5.	wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add –
+6.	sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+7.	sudo apt update
+8.	sudo apt install Jenkins
+9.	sudo systemctl start jenkins
+
+Nginx installations:
+ 1.yum update -y
+2.sudo amazon-linux-extras install nginx1
+3.systemctl start nginx
+4.systemctl status nginx
+5.systemctl enable nginx
